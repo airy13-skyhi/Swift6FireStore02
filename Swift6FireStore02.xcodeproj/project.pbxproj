@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,13 @@
 		05FE856C2641662A00339FF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FE856A2641662A00339FF9 /* Main.storyboard */; };
 		05FE856E2641662C00339FF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05FE856D2641662C00339FF9 /* Assets.xcassets */; };
 		05FE85712641662C00339FF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FE856F2641662C00339FF9 /* LaunchScreen.storyboard */; };
+		05FE857A26416C5300339FF9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FE857926416C5300339FF9 /* LoginViewController.swift */; };
+		05FE857C26435CE100339FF9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05FE857B26435CE100339FF9 /* GoogleService-Info.plist */; };
+		E57AEC61765ADE3A665E2F26 /* Pods_Swift6FireStore02.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B005450B09D9F19306134BCD /* Pods_Swift6FireStore02.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0018D9570F57F0ADF2E19660 /* Pods-Swift6FireStore02.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift6FireStore02.release.xcconfig"; path = "Target Support Files/Pods-Swift6FireStore02/Pods-Swift6FireStore02.release.xcconfig"; sourceTree = "<group>"; };
 		05FE85612641662A00339FF9 /* Swift6FireStore02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift6FireStore02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FE85642641662A00339FF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05FE85662641662A00339FF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		05FE856D2641662C00339FF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05FE85702641662C00339FF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05FE85722641662C00339FF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05FE857926416C5300339FF9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		05FE857B26435CE100339FF9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B005450B09D9F19306134BCD /* Pods_Swift6FireStore02.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift6FireStore02.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D384309F7407A0759F28675B /* Pods-Swift6FireStore02.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift6FireStore02.debug.xcconfig"; path = "Target Support Files/Pods-Swift6FireStore02/Pods-Swift6FireStore02.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E57AEC61765ADE3A665E2F26 /* Pods_Swift6FireStore02.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				05FE85632641662A00339FF9 /* Swift6FireStore02 */,
 				05FE85622641662A00339FF9 /* Products */,
+				C25B4D1618CA834C4028DEFF /* Pods */,
+				36460212F132369ECC7A2C9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +69,40 @@
 			children = (
 				05FE85642641662A00339FF9 /* AppDelegate.swift */,
 				05FE85662641662A00339FF9 /* SceneDelegate.swift */,
-				05FE85682641662A00339FF9 /* ViewController.swift */,
+				05FE857826416C2F00339FF9 /* Controller */,
 				05FE856A2641662A00339FF9 /* Main.storyboard */,
 				05FE856D2641662C00339FF9 /* Assets.xcassets */,
 				05FE856F2641662C00339FF9 /* LaunchScreen.storyboard */,
+				05FE857B26435CE100339FF9 /* GoogleService-Info.plist */,
 				05FE85722641662C00339FF9 /* Info.plist */,
 			);
 			path = Swift6FireStore02;
+			sourceTree = "<group>";
+		};
+		05FE857826416C2F00339FF9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05FE85682641662A00339FF9 /* ViewController.swift */,
+				05FE857926416C5300339FF9 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		36460212F132369ECC7A2C9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B005450B09D9F19306134BCD /* Pods_Swift6FireStore02.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C25B4D1618CA834C4028DEFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D384309F7407A0759F28675B /* Pods-Swift6FireStore02.debug.xcconfig */,
+				0018D9570F57F0ADF2E19660 /* Pods-Swift6FireStore02.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05FE85752641662C00339FF9 /* Build configuration list for PBXNativeTarget "Swift6FireStore02" */;
 			buildPhases = (
+				EF89A165ACB10447128FB37D /* [CP] Check Pods Manifest.lock */,
 				05FE855D2641662A00339FF9 /* Sources */,
 				05FE855E2641662A00339FF9 /* Frameworks */,
 				05FE855F2641662A00339FF9 /* Resources */,
+				3FCB9F40D65F14A0697C219F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05FE85712641662C00339FF9 /* LaunchScreen.storyboard in Resources */,
+				05FE857C26435CE100339FF9 /* GoogleService-Info.plist in Resources */,
 				05FE856E2641662C00339FF9 /* Assets.xcassets in Resources */,
 				05FE856C2641662A00339FF9 /* Main.storyboard in Resources */,
 			);
@@ -132,11 +173,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FCB9F40D65F14A0697C219F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swift6FireStore02/Pods-Swift6FireStore02-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swift6FireStore02/Pods-Swift6FireStore02-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swift6FireStore02/Pods-Swift6FireStore02-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF89A165ACB10447128FB37D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swift6FireStore02-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		05FE855D2641662A00339FF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FE857A26416C5300339FF9 /* LoginViewController.swift in Sources */,
 				05FE85692641662A00339FF9 /* ViewController.swift in Sources */,
 				05FE85652641662A00339FF9 /* AppDelegate.swift in Sources */,
 				05FE85672641662A00339FF9 /* SceneDelegate.swift in Sources */,
@@ -283,6 +367,7 @@
 		};
 		05FE85762641662C00339FF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D384309F7407A0759F28675B /* Pods-Swift6FireStore02.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,12 +380,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Noneudemy.Swift6FireStore02;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		05FE85772641662C00339FF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0018D9570F57F0ADF2E19660 /* Pods-Swift6FireStore02.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,7 +399,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Noneudemy.Swift6FireStore02;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
