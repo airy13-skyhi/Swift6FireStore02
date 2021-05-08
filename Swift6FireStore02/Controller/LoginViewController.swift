@@ -6,8 +6,16 @@
 //
 
 import UIKit
+import FirebaseAuth
+
 
 class LoginViewController: UIViewController {
+    
+    
+    
+    @IBOutlet weak var textfield: UITextField!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +25,41 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    
+    
+    func login() {
+        
+        Auth.auth().signInAnonymously { (result, error) in
+            
+            let user = result?.user
+            print(user)
+            
+            UserDefaults.standard.set(self.textfield.text, forKey: "userName")
+            
+            let viewVC = self.storyboard?.instantiateViewController(identifier: "viewVC") as! ViewController
+            self.navigationController?.pushViewController(viewVC, animated: true)
+            
+        }
+        
+    }
+    
+    
+    
+    @IBAction func done(_ sender: Any) {
+        
+        login()
+        
+    }
+    
     
 
     /*

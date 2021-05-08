@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05560B4B26460844000C63E3 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05560B4A26460844000C63E3 /* CheckViewController.swift */; };
+		05560B4E26460A46000C63E3 /* AnswersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05560B4D26460A46000C63E3 /* AnswersModel.swift */; };
+		05560B502646237E000C63E3 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05560B4F2646237E000C63E3 /* CommentViewController.swift */; };
+		05560B5226462751000C63E3 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05560B5126462751000C63E3 /* CommentModel.swift */; };
 		05FE85652641662A00339FF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FE85642641662A00339FF9 /* AppDelegate.swift */; };
 		05FE85672641662A00339FF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FE85662641662A00339FF9 /* SceneDelegate.swift */; };
 		05FE85692641662A00339FF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FE85682641662A00339FF9 /* ViewController.swift */; };
@@ -20,6 +24,10 @@
 
 /* Begin PBXFileReference section */
 		0018D9570F57F0ADF2E19660 /* Pods-Swift6FireStore02.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift6FireStore02.release.xcconfig"; path = "Target Support Files/Pods-Swift6FireStore02/Pods-Swift6FireStore02.release.xcconfig"; sourceTree = "<group>"; };
+		05560B4A26460844000C63E3 /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
+		05560B4D26460A46000C63E3 /* AnswersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersModel.swift; sourceTree = "<group>"; };
+		05560B4F2646237E000C63E3 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		05560B5126462751000C63E3 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 		05FE85612641662A00339FF9 /* Swift6FireStore02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift6FireStore02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FE85642641662A00339FF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05FE85662641662A00339FF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05560B4C26460A22000C63E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05560B4D26460A46000C63E3 /* AnswersModel.swift */,
+				05560B5126462751000C63E3 /* CommentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		05FE85582641662A00339FF9 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +86,7 @@
 			children = (
 				05FE85642641662A00339FF9 /* AppDelegate.swift */,
 				05FE85662641662A00339FF9 /* SceneDelegate.swift */,
+				05560B4C26460A22000C63E3 /* Model */,
 				05FE857826416C2F00339FF9 /* Controller */,
 				05FE856A2641662A00339FF9 /* Main.storyboard */,
 				05FE856D2641662C00339FF9 /* Assets.xcassets */,
@@ -84,6 +102,8 @@
 			children = (
 				05FE85682641662A00339FF9 /* ViewController.swift */,
 				05FE857926416C5300339FF9 /* LoginViewController.swift */,
+				05560B4A26460844000C63E3 /* CheckViewController.swift */,
+				05560B4F2646237E000C63E3 /* CommentViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -220,9 +240,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05560B502646237E000C63E3 /* CommentViewController.swift in Sources */,
+				05560B5226462751000C63E3 /* CommentModel.swift in Sources */,
 				05FE857A26416C5300339FF9 /* LoginViewController.swift in Sources */,
+				05560B4E26460A46000C63E3 /* AnswersModel.swift in Sources */,
 				05FE85692641662A00339FF9 /* ViewController.swift in Sources */,
 				05FE85652641662A00339FF9 /* AppDelegate.swift in Sources */,
+				05560B4B26460844000C63E3 /* CheckViewController.swift in Sources */,
 				05FE85672641662A00339FF9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
