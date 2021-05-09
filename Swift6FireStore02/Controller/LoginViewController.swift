@@ -38,7 +38,7 @@ class LoginViewController: UIViewController {
     
     func login() {
         
-        Auth.auth().signInAnonymously { (result, error) in
+        Auth.auth().signInAnonymously { result, error in
             
             let user = result?.user
             print(user)

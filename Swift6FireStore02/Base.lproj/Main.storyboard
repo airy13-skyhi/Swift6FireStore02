@@ -31,6 +31,9 @@
                                 <state key="normal" title="決定">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="done:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wDi-CY-ZI9"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ppQ-ut-tdR">
                                 <rect key="frame" x="49" y="198" width="302" height="34"/>
@@ -44,6 +47,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cRO-SG-13e"/>
                     <connections>
+                        <outlet property="textfield" destination="ppQ-ut-tdR" id="Xnz-lM-INA"/>
                         <segue destination="9c7-rF-vBK" kind="show" identifier="" id="ucJ-s2-st8"/>
                     </connections>
                 </viewController>
@@ -256,21 +260,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="58" id="NQm-gc-PSf">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="58" id="NQm-gc-PSf">
                                         <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NQm-gc-PSf" id="ih0-dm-Rcn">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="58"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TkS-Ly-efy">
-                                                    <rect key="frame" x="20" y="16" width="350" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TkS-Ly-efy">
+                                                    <rect key="frame" x="30" y="21" width="350" height="16"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="TkS-Ly-efy" firstAttribute="trailing" secondItem="ih0-dm-Rcn" secondAttribute="trailingMargin" constant="10" id="39L-Et-EoB"/>
+                                                <constraint firstItem="TkS-Ly-efy" firstAttribute="leading" secondItem="ih0-dm-Rcn" secondAttribute="leadingMargin" constant="10" id="kFL-2z-xvU"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="TkS-Ly-efy" secondAttribute="bottom" constant="10" id="kh7-a1-2pJ"/>
+                                                <constraint firstItem="TkS-Ly-efy" firstAttribute="top" secondItem="ih0-dm-Rcn" secondAttribute="topMargin" constant="10" id="r9y-48-WTa"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
@@ -286,6 +295,9 @@
                                 <rect key="frame" x="320" y="783" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="sendAction:" destination="CT7-0n-ix3" eventType="touchUpInside" id="JO4-o3-zkV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2gj-BN-LU7"/>
@@ -294,7 +306,9 @@
                     <navigationItem key="navigationItem" id="sT9-e2-Vmu"/>
                     <connections>
                         <outlet property="kaitouLabel" destination="Jb1-cE-ZIS" id="z8G-o9-XnD"/>
+                        <outlet property="sendButton" destination="hrr-CJ-CRZ" id="MzS-Aq-7JS"/>
                         <outlet property="tableView" destination="A2W-TQ-RBW" id="a7X-ZE-WaG"/>
+                        <outlet property="textfield" destination="R1P-pb-dh4" id="QUw-DP-7V5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PrC-fQ-F2I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
